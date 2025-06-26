@@ -8,6 +8,7 @@
         display: flex;
         z-index: 2;
     }
+
     header nav{
         position: fixed;
         padding-top: 100px;
@@ -25,8 +26,6 @@
         padding: 20px 0px;
     }
 
-    header .banner{
-    }
     header .banner h1{
         font-size: 40px;
     }

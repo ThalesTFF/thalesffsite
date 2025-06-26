@@ -62,7 +62,7 @@ input, button, textarea, select {
     overflow: hidden;
     transition: all ease 0.5s;
     border: 2px solid var(--roxo);
-    border-radius: 30px;
+    border-radius: 320px;
     color: var(--branco);
     font-size: 10px;
     letter-spacing: 2px;
@@ -111,15 +111,10 @@ header .mn-mobile {
     position: fixed;
     top: 20px;
     right: 20px;
-
-    
     font-size: 35px;
     color: white;
     cursor: pointer;
     z-index: 1;
-}
-.mn-mobile-active{
-  
 }
 
 header nav{
