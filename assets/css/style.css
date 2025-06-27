@@ -21,7 +21,7 @@
 
 body{
     font-size: 16px;
-    color: var(--preto);
+    color: var(--branco);
     font-family: Poppins;
 }
 html, body {
@@ -95,7 +95,7 @@ header{
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100dvh;
     overflow: hidden;
 }
 header .container{
@@ -124,9 +124,9 @@ header nav{
     top: 0;
     left: 0;
     height: 80px;
-    width: 100%;
+    width: 100dvw;
     background-color: #141518a6;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(5px);
     transition: all ease 0.5s;
 }
 .header-nav-move{
@@ -159,7 +159,7 @@ header .banner h1{
     text-transform: capitalize;
     font-size: 50px;
     font-weight: 500;
-    line-height: 55PX;
+    line-height: 55px;
 }
 header .banner h1 span{
     color: var(--roxo);
@@ -174,4 +174,58 @@ header .banner h2{
     font-weight: 500;
     color: var(--branco);
     line-height: 22px;
+}
+
+/*About*/
+#about{
+    height: 100dvh;
+    background-color: var(--preto);
+    overflow: hidden;
+}
+#about .container{
+    display: flex;
+    height: 100%;
+    padding-left: 0px;
+}
+#about .about-area{
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-content:flex-end;
+    grid-template-areas: 
+        "about-img about-infos "
+    ;
+}
+#about .about-area img{
+    width: 500px;
+    height: auto;
+    grid-area: about-img;
+    display: flex;
+    align-items: center;
+}
+
+#about .about-infos{
+    flex: 1;
+    height: 100%;
+    padding-top: 100px;
+    padding-left: 40px;
+    grid-area: about-infos;
+}
+#about .about-infos h2{
+    font-size: 40px;
+}
+#about .about-infos h2 span{
+    color: var(--roxo);
+}
+#about .about-infos p{
+    margin-top: 30px;
+    font-size: 16px;
+    max-width: 600px;
+}
+#about .about-button-area{
+    display: flex;
+}
+#about .about-infos .cta-button{
+    margin-top: 50px;
+    margin-right: 20px;
 }
